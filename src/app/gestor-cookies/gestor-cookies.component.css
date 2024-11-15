@@ -1,0 +1,25 @@
+.cookie-container {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin-top: 20px;
+}
+
+.cookie-container input {
+  padding: 8px;
+  font-size: 1rem;
+  margin-right: 10px;
+}
+
+.cookie-container button {
+  padding: 8px 12px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.cookie-container button:hover {
+  background-color: #0056b3;
+}

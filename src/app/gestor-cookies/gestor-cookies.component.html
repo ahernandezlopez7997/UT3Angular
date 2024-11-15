@@ -1,0 +1,17 @@
+<!-- EJERCICIO 6 PARTE 1 -->
+<!-- Componente que muestra un saludo al usuario -->
+<div class="cookie-container">
+  <ng-container *ngIf="!nombreUsuario; else saludoUsuario">
+    <p>Por favor, introduce tu nombre:</p>
+    <input
+      type="text"
+      [(ngModel)]="nombreTemporal"
+    placeholder="Tu nombre"/><!-- Se vincula al campo temporal -->
+    <button (click)="guardarNombre()">Guardar</button>
+  </ng-container>
+
+  <ng-template #saludoUsuario>
+    <h1>¡Hola, {{ nombreUsuario }}!</h1>
+    <p>Bienvenido de nuevo.</p>
+  </ng-template>
+</div>
